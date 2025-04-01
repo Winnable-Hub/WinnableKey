@@ -22,7 +22,7 @@ numss = string.match(lv, "%d+")
 nums = tonumber(numss)
 for model2e1,model2e12 in dasujxc do
 for doubleg,doubleb in dasydcs do
-if model2e1 == "HP" and model2e12 > nums then
+if model2e1 == "MaxHP" and model2e12 > nums then
 if doubleg == "Dead" and doubleb == false then
 goto(v222.CFrame)
 end
