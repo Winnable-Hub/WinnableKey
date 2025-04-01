@@ -10,6 +10,7 @@ if _G.Settings.Farm_way == "Teleport" then
         end
     end
 
+if _G.Settings.Auto_HP_More then
 for i33,v33 in pairs(workspace.__Main.__Enemies.Server:GetChildren()) do
 for i222,v222 in pairs(v33:GetChildren()) do
 
@@ -24,6 +25,7 @@ for doubleg,doubleb in dasydcs do
 if model2e1 == "HP" and model2e12 > nums then
 if doubleg == "Dead" and doubleb == false then
 goto(v222.CFrame)
+end
 end
 end
 end
