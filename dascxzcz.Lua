@@ -16,10 +16,12 @@ for i222,v222 in pairs(v33:GetChildren()) do
 ydasdx = v222
 dasujxc = v222:GetAttributes()
 dasydcs = v222:GetAttributes()
-
+lv = _G.Settings.Health_More
+numss = string.match(lv, "%d+")
+nums = tonumber(numss)
 for model2e1,model2e12 in dasujxc do
 for doubleg,doubleb in dasydcs do
-if model2e1 == "HP" and model2e12 > _G.Settings.Health_More then
+if model2e1 == "HP" and model2e12 > nums then
 if doubleg == "Dead" and doubleb == false then
 goto(v222.CFrame)
 end
