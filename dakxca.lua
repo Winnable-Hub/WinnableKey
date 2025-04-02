@@ -53,7 +53,7 @@ if _G.Settings.Webhook_Link ~= "" then
                       ["fields"] = {
                           {
                               ["name"] = "Account : ".."||"..player.Name.."||".."\nRank : "..game:GetService("Players").LocalPlayer.leaderstats.Rank.Value,
-                              ["value"] = "Money : "..game:GetService("Players").LocalPlayer.leaderstats.Cash.Value.."\nGems : "..gemsa.."\nEnchant Common : "..enca.."\nEnchant Rare : "..enra.."\nEnchant Legendary : "..enla.."\nTicket : "..tkca,
+                              ["value"] = "Money : "..game:GetService("Players").LocalPlayer.PlayerGui.Hud.BottomContainer.Coins.Text.."\nGems : "..game:GetService("Players").LocalPlayer.PlayerGui.Hud.BottomContainer.Gems.Text.."\nEnchant Common : "..enca.."\nEnchant Rare : "..enra.."\nEnchant Legendary : "..enla.."\nTicket : "..tkca,
                           },
                       },
                       ['description'] = 'https://discord.com/invite/Dfxktn5cMX'
