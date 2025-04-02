@@ -17,7 +17,13 @@ function yessirss()
 end
 end
 
-if _G.Settings.Auto_Beru_Hop and yessirss() then
+cf = CFrame.new(3841.43042, 60.1089211, 3058.92651, 0.679291308, 3.0728728e-08, 0.733868718, 5.63038839e-07, 1, -5.63038157e-07, -0.733868718, 7.95663539e-07, 0.679291308)
+
+local Distance7 = (cf.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+
+if _G.Settings.Auto_Beru_Hop and yessirss() and Distance7 < 500 then
+print(true)
+
 local PlaceID = 87039211657390
 local AllIDs = {}
 local foundAnything = ""
