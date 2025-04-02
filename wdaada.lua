@@ -42,6 +42,7 @@ for i2,v2 in pairs(workspace.__Main.__Enemies.Server:GetChildren()) do
         for jj,dd in bigasss do
         if jj == "Dead" and dd == false then
             goto(v2.CFrame)
+            task.wait(1)
     end
     end
     end
@@ -57,6 +58,7 @@ for i2,v2 in pairs(workspace.__Main.__Enemies.Server:GetChildren()) do
         for jj,dd in bigasss do
         if jj == "Dead" and dd == false then
             goto(v2.CFrame)
+            task.wait(1)
     end
     end
     end
