@@ -10,7 +10,6 @@ if _G.Settings.Farm_way == "Teleport" then
         end
     end
 
-if _G.Settings.Auto_Boss then
 for i33,v33 in pairs(workspace.__Main.__Enemies.Server:GetChildren()) do
 for i222,v222 in pairs(v33:GetChildren()) do
 maxdistance33 = math.huge
@@ -27,7 +26,6 @@ maxdistance33 = Distance5
 model22 = v222
 goto(model22.CFrame)
 
-end
 end
 end
 end
