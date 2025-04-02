@@ -10,7 +10,7 @@ if _G.Settings.Farm_way == "Teleport" then
         end
     end
 
-local maxdistance = math.huge
+local maxdistance33 = math.huge
 
 if _G.Settings.Auto_Boss then
 for i33,v33 in pairs(workspace.__Main.__Enemies.Server:GetChildren()) do
