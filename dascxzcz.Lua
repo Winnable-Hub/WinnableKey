@@ -21,7 +21,12 @@ for model2e1,model2e12 in dasujxc do
 for doubleg,doubleb in dasydcs do
 if model2e1 == "Scale" and model2e12 == 2 then
 if doubleg == "Dead" and doubleb == false then
+local Distance2 = (v222.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+if Distance2 < maxdistance then
+maxdistance = Distance2
+model2 = v222
 goto(v222.CFrame)
+
 end
 end
 end
