@@ -15,8 +15,9 @@ function yessirss()
     end
     return true
 end
+end
 
-if _G.Settings.Auto_Beru_Hop then
+if _G.Settings.Auto_Beru_Hop and yessirss() then
 local PlaceID = 87039211657390
 local AllIDs = {}
 local foundAnything = ""
