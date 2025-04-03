@@ -10,7 +10,7 @@ end
 weapon = {}
 
 for i,v in pairs(game:GetService("Players").LocalPlayer.leaderstats.Inventory.Weapons:GetChildren()) do
-if string.find(v.Name, _G.Settings.Weapon_Name) and checklevel(v) == _G.Settings.Weapon_Rank_Remove then
+if string.find(v.Name, _G.Settings.Weapon_Names) and checklevel(v) == _G.Settings.Weapon_Rank_Remove then
 table.insert(weapon, v.Name)
 end
 end
