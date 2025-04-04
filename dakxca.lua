@@ -1,34 +1,47 @@
 player = game.Players.LocalPlayer
 
+if game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchCommon") then
 local enc = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.EnchCommon:GetAttributes()
-local enr = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.EnchRare:GetAttributes()
-local enl = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.EnchLegendary:GetAttributes()
-local tkc = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.Ticket:GetAttributes()
-local gems = game:GetService("Players").LocalPlayer.leaderstats:GetAttributes()
-
 for i,v in enc do
 if i == "Amount" then
 enca = v
 end
 end
-
+elseif not game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchCommon") then
+enca = 0
+end
+if game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchRare") then
+local enr = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.EnchRare:GetAttributes()
 for i,v in enr do
 if i == "Amount" then
 enra = v
 end
 end
-
+elseif not game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchRare") then
+enra = 0
+end
+if game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchLegendary") then
+local enl = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.EnchLegendary:GetAttributes()
 for i,v in enl do
 if i == "Amount" then
 enla = v
 end
 end
-
+elseif not game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("EnchLegendary") then
+enla = 0
+end
+if game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("Ticket") then
+local tkc = game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items.Ticket:GetAttributes()
 for i,v in tkc do
 if i == "Amount" then
 tkca = v
 end
 end
+elseif not game:GetService("Players").LocalPlayer.leaderstats.Inventory.Items:FindFirstChild("Ticket") then
+tkca = 0
+end
+
+local gems = game:GetService("Players").LocalPlayer.leaderstats:GetAttributes()
 
 for i,v in gems do
 if i == "Gems" then
