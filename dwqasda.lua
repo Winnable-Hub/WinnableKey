@@ -8,8 +8,6 @@ for doubleg,doubleb in dasydcs do
 if model2e1 == "Scale" and model2e12 == 2 then
 if doubleg == "HP" and doubleb > 0 then
 v222.Size = Vector3.new(5,5,5)
-elseif doubleb == 0 then
-v222.Size = Vector3.new(2,2,2)
 end
 end
 end
